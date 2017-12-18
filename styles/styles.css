@@ -1,0 +1,94 @@
+/*CSS for index.html*/
+.image-center-ava img {
+  position: absolute;
+  left: 45%;
+  top: 67%;
+}
+.image-center img {
+  position: absolute;
+  left: 51%;
+  top: 67%;
+}
+.image-top-right {
+  text-align:right;
+  padding:20px;
+}
+.image-top-right img {
+  width:80px;
+}
+
+.image-bottom-right {
+  position: absolute;
+  right: 10px;
+  bottom:10px;
+}
+
+@media only screen and (max-width: 600px) {
+
+.image-center img {
+  width: 80px;
+  top:67%;
+  left:40%;
+} 
+.image-center-ava img {
+  width: 80px;
+  top:67%;
+  left:30%;
+} 
+.image-top-right img {
+  width:50px;
+}
+.image-top-right {
+  padding:10px;
+}
+}
+.image-copyright {
+  position: absolute;
+  left: 10px;
+  bottom:10px;
+  color: #BDBDBDFF;
+}
+/*CSS for sendyourowl.php*/
+.textareaCenter {
+  text-align      : center;
+  font-size       : 18px;
+}
+.form-control {
+  font-size       : 18;
+  width           : 200px;
+  height          : 70px;
+}
+.bg-1 { 
+  background-color: #1abc9c; /* Green */
+  color           : #ffffff;
+}
+.bg-2 { 
+  background-color: #474e5d; /* Dark Blue */
+  color           : #ffffff;
+}
+.bg-3 { 
+  background-color: #ffffff; /* White */
+  color           : #555555;
+}
+.container-fluid {
+  padding-top     : 10px;
+  padding-bottom  : 10px;
+}
+.image-logo {
+  width           : 50px;
+  height          : 50px;
+}
+
+/*CSS for image.php*/
+.image {
+  max-width       : 99%;
+  max-height      : 99%;
+}
+.fill {
+  position        : fixed;
+  left            : 0;
+  right           : 0;
+  top             : 0;
+  bottom          : 0;
+  text-align      : center;
+}
