@@ -31,9 +31,19 @@ $lang['BG_5'] = 'Nightfall on Privet Drive';
 $lang['BG_6'] = 'Quidditch pitch at dusk';
 $lang['BG_7'] = 'Quidditch pitch in the sun';
 
+$lang['LB_CHOOSE_SKIN'] = 'Choose your skin:';
+
+$lang['LB_CHOOSE_FACE'] = 'Choose your face:';
+
 $lang['LB_CHOOSE_SHIRT'] = 'Choose your shirt:';
 
 $lang['LB_CHOOSE_HAIR'] = 'Choose your hair:';
 
+$lang['LB_CHOOSE_HAIR_COLOR'] = 'Choose your hair color:';
+
+$lang['LB_CHOOSE_SCARF'] = 'Choose your scarf:';
+
 $lang['BUTTON_CREATE'] = 'Send your owl';
+
+$lang['BUTTON_CREATE_XMAS'] = 'Download';
 ?>

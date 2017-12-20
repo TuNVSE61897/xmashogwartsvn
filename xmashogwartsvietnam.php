@@ -34,8 +34,11 @@ include 'common.php';
             $(document).ready(function () {
 
                 $('#xmasForm').change(function () {
-                    shirt_value = $("input[name='optionsShirts']:checked").val();
+                    skin_value = $("input[name='optionsSkins']:checked").val();
+                    face_value = $("input[name='optionsFaces']:checked").val();
                     hair_value = $("input[name='optionsHairs']:checked").val();
+                    color_value = $("input[name='optionsHairColors']:checked").val();
+                    scarf_value = $("input[name='optionsScarfs']:checked").val();
                     //   alert('Shirt: ' + shirt_value + ' - Hair: ' + hair_value);
 
                     var xmlhttp = new XMLHttpRequest();
@@ -45,7 +48,9 @@ include 'common.php';
                             document.getElementById("preview-image").src = this.responseText;
                         }
                     };
-                    xmlhttp.open("GET", "image-xmas.php?optionsShirts=" + shirt_value + "&optionsHairs=" + hair_value, true);
+                    xmlhttp.open("GET", "image-xmas.php?optionsSkins=" + skin_value + 
+                            "&optionsFaces=" + face_value + "&optionsHairs=" + hair_value +
+                            "&optionsHairColors=" + color_value + "&optionsScarfs=" + scarf_value, true);
                     xmlhttp.send();
 
                     /*$.ajax({
@@ -106,24 +111,41 @@ include 'common.php';
 
                 <form style="width: 70%" class="ajax-call" id="xmasForm" action="image-xmas.php" method="get" role="form">
                     <br/><br/>
-
+                    
                     <div class="form-group">
-                        <label for="name" class="col-sm-2 control-label"><?php echo $lang['LB_CHOOSE_SHIRT']; ?></label>
+                        <label for="name" class="col-sm-2 control-label"><?php echo $lang['LB_CHOOSE_SKIN']; ?></label>
                         <div class="col-sm-10">
                             <label>
-                                <input type="radio" name="optionsShirts" id="optionsRadios1" value="option1" checked>
-                                Áo Vàng
+                                <input type="radio" name="optionsSkins" id="optionsRadios1" value="option1" checked>
+                                Sáng
                                 <?php //echo $lang['OWL_1']; ?>
                             </label><br>
                             <label>
-                                <input type="radio" name="optionsShirts" id="optionsRadios2" value="option2">
-                                Áo Đỏ
+                                <input type="radio" name="optionsSkins" id="optionsRadios2" value="option2">
+                                Trung 
                                 <?php // echo $lang['OWL_2']; ?>
                             </label><br>
                             <label>
-                                <input type="radio" name="optionsShirts" id="optionsRadios3" value="option3">
-                                Áo Xanh
+                                <input type="radio" name="optionsSkins" id="optionsRadios3" value="option3">
+                                Đen
                                 <?php //echo $lang['OWL_3']; ?>
+                            </label><br><br>
+                        </div>
+                    </div>
+                    
+
+                    <div class="form-group">
+                        <label for="name" class="col-sm-2 control-label"><?php echo $lang['LB_CHOOSE_FACE']; ?></label>
+                        <div class="col-sm-10">
+                            <label>
+                                <input type="radio" name="optionsFaces" id="optionsRadios1" value="option1" checked>
+                                Lườm
+                                <?php //echo $lang['OWL_1']; ?>
+                            </label><br>
+                            <label>
+                                <input type="radio" name="optionsFaces" id="optionsRadios2" value="option2">
+                                Mếu
+                                <?php // echo $lang['OWL_2']; ?>
                             </label><br><br>
                         </div>
                     </div>
@@ -133,27 +155,50 @@ include 'common.php';
                         <div class="col-sm-10">
                             <label>
                                 <input type="radio" name="optionsHairs" id="optionsRadios1" value="option1" checked>
-                                Tóc Dài
+                                Tóc Malfoy
                                 <?php //echo $lang['BG_1']; ?>
                             </label><br>
                             <label>
-                                <input type="radio" name="optionsHairs" id="optionsRadios2" value="option2">
-                                Tóc Bông
-                                <?php //echo $lang['BG_2']; ?>
+                                <input type="radio" name="optionsHairs" id="optionsRadios5" value="option2">
+                                Tóc Weasley
+                                <?php //echo $lang['BG_5']; ?>
+                            </label><br><br>
+                        </div>
+                    </div>
+                    
+                     <div class="form-group">
+                        <label for="name" class="col-sm-2 control-label"><?php echo $lang['LB_CHOOSE_HAIR_COLOR']; ?></label>
+                        <div class="col-sm-10">
+                            <label>
+                                <input type="radio" name="optionsHairColors" id="optionsRadios1" value="option1" checked>
+                                Vàng
+                                <?php //echo $lang['BG_1']; ?>
                             </label><br>
                             <label>
-                                <input type="radio" name="optionsHairs" id="optionsRadios3" value="option3">
-                                Tóc Ngu
-                                <?php //echo $lang['BG_3']; ?>
+                                <input type="radio" name="optionsHairColors" id="optionsRadios5" value="option2">
+                                Đỏ
+                                <?php //echo $lang['BG_5']; ?>
                             </label><br>
                             <label>
-                                <input type="radio" name="optionsHairs" id="optionsRadios4" value="option4">
-                                Tóc Thư Sinh
-                                <?php //echo $lang['BG_4']; ?>
+                                <input type="radio" name="optionsHairColors" id="optionsRadios2" value="option3">
+                                Đen
+                                <?php //echo $lang['BG_5']; ?>
+                            </label><br><br>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="name" class="col-sm-2 control-label"><?php echo $lang['LB_CHOOSE_SCARF']; ?></label>
+                        <div class="col-sm-10">
+                            <label>
+                                <input type="radio" name="optionsScarfs" id="optionsRadios1" value="option1" checked>
+                                Slytherin
+        
+                                <?php //echo $lang['BG_1']; ?>
                             </label><br>
                             <label>
-                                <input type="radio" name="optionsHairs" id="optionsRadios5" value="option5">
-                                Tóc Xịt Keo
+                                <input type="radio" name="optionsScarfs" id="optionsRadios2" value="option2">
+                                 Gryffindors
                                 <?php //echo $lang['BG_5']; ?>
                             </label><br><br>
                         </div>
@@ -161,14 +206,14 @@ include 'common.php';
 
                     <div class="form-group">
                         <div class="col-sm-10 col-sm-offset-2">
-                            <input id="btn-download" name="btnDownload" onclick="downloadImage()" type="button" value="<?php echo $lang['BUTTON_CREATE']; ?>" class="btn btn-default">
+                            <input id="btn-download" name="btnDownload" onclick="downloadImage()" type="button" value="<?php echo $lang['BUTTON_CREATE_XMAS']; ?>" class="btn btn-default">
                         </div>
                     </div>
 
                 </form>
 
 
-                <img id="preview-image" src="images/default.png" class="img-circle" width="20%" height="20%" download="myImage">
+                <img id="preview-image" src="images/default3.png" class="img-circle" width="30%" height="30%" download="myImage">
 
             </div>
         </div>

@@ -31,9 +31,19 @@ $lang['BG_5'] = 'Đêm ở Privet Drive';
 $lang['BG_6'] = 'Sân Quidditch chiều êm ả';
 $lang['BG_7'] = 'Sân Quidditch ngày nắng';
 
+$lang['LB_CHOOSE_SKIN'] = 'Bạn chọn màu da nào:';
+
+$lang['LB_CHOOSE_FACE'] = 'Bạn chọn mặt nào:';
+
 $lang['LB_CHOOSE_SHIRT'] = 'Bạn chọn áo nào:';
 
 $lang['LB_CHOOSE_HAIR'] = 'Bạn chọn tóc nào:';
 
+$lang['LB_CHOOSE_HAIR_COLOR'] = 'Bạn chọn màu tóc nào:';
+
+$lang['LB_CHOOSE_SCARF'] = 'Bạn chọn khăn nào:';
+
 $lang['BUTTON_CREATE'] = 'Gửi cú đi';
+
+$lang['BUTTON_CREATE_XMAS'] = 'Tải về';
 ?>
