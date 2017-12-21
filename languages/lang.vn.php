@@ -43,6 +43,10 @@ $lang['LB_CHOOSE_HAIR_COLOR'] = 'Bạn chọn màu tóc nào:';
 
 $lang['LB_CHOOSE_SCARF'] = 'Bạn chọn khăn nào:';
 
+$lang['LB_CHOOSE_GLASS'] = 'Bạn có đeo kiếng:';
+
+$lang['LB_CHOOSE_NAME'] = 'Chọn tên bạn:';
+
 $lang['BUTTON_CREATE'] = 'Gửi cú đi';
 
 $lang['BUTTON_CREATE_XMAS'] = 'Tải về';

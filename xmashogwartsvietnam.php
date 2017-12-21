@@ -39,7 +39,9 @@ include 'common.php';
                     hair_value = $("input[name='optionsHairs']:checked").val();
                     color_value = $("input[name='optionsHairColors']:checked").val();
                     scarf_value = $("input[name='optionsScarfs']:checked").val();
-                    //   alert('Shirt: ' + shirt_value + ' - Hair: ' + hair_value);
+                    letter_value = $("#optionsLetters option:selected").text();
+                    glass_value = $("input[name='optionsGlass']:checked").val();
+                      // alert(letter_value);
 
                     var xmlhttp = new XMLHttpRequest();
                     xmlhttp.onreadystatechange = function () {
@@ -50,7 +52,8 @@ include 'common.php';
                     };
                     xmlhttp.open("GET", "image-xmas.php?optionsSkins=" + skin_value + 
                             "&optionsFaces=" + face_value + "&optionsHairs=" + hair_value +
-                            "&optionsHairColors=" + color_value + "&optionsScarfs=" + scarf_value, true);
+                            "&optionsHairColors=" + color_value + "&scarf=" + scarf_value +
+                            "&letter=" + letter_value + "&glass=" + glass_value, true);
                     xmlhttp.send();
 
                     /*$.ajax({
@@ -155,14 +158,79 @@ include 'common.php';
                         <div class="col-sm-10">
                             <label>
                                 <input type="radio" name="optionsHairs" id="optionsRadios1" value="option1" checked>
-                                Tóc Malfoy
+                                Tóc 1
                                 <?php //echo $lang['BG_1']; ?>
                             </label><br>
                             <label>
-                                <input type="radio" name="optionsHairs" id="optionsRadios5" value="option2">
-                                Tóc Weasley
+                                <input type="radio" name="optionsHairs" id="optionsRadios2" value="option2">
+                                Tóc 2
                                 <?php //echo $lang['BG_5']; ?>
-                            </label><br><br>
+                            </label><br>
+                            <label>
+                                <input type="radio" name="optionsHairs" id="optionsRadios3" value="option3">
+                                Tóc 3
+                                <?php //echo $lang['BG_5']; ?>
+                            </label><br>
+                            <label>
+                                <input type="radio" name="optionsHairs" id="optionsRadios4" value="option4">
+                                Tóc 4
+                                <?php //echo $lang['BG_5']; ?>
+                            </label><br>
+                            <label>
+                                <input type="radio" name="optionsHairs" id="optionsRadios5" value="option5">
+                                Tóc 5
+                                <?php //echo $lang['BG_5']; ?>
+                            </label><br>
+                            <label>
+                                <input type="radio" name="optionsHairs" id="optionsRadios6" value="option6">
+                                Tóc 6
+                                <?php //echo $lang['BG_5']; ?>
+                            </label><br>
+                            <label>
+                                <input type="radio" name="optionsHairs" id="optionsRadios7" value="option7">
+                                Tóc 7
+                                <?php //echo $lang['BG_5']; ?>
+                            </label><br>
+                            <label>
+                                <input type="radio" name="optionsHairs" id="optionsRadios8" value="option8">
+                                Tóc 8
+                                <?php //echo $lang['BG_5']; ?>
+                            </label><br><label>
+                                <input type="radio" name="optionsHairs" id="optionsRadios9" value="option9">
+                                Tóc 9
+                                <?php //echo $lang['BG_5']; ?>
+                            </label><br>
+                            <label>
+                                <input type="radio" name="optionsHairs" id="optionsRadios10" value="option10">
+                                Tóc 10
+                                <?php //echo $lang['BG_5']; ?>
+                            </label><br>
+                            <label>
+                                <input type="radio" name="optionsHairs" id="optionsRadios11" value="option11">
+                                Tóc 11
+                                <?php //echo $lang['BG_5']; ?>
+                            </label><br>
+                            <label>
+                                <input type="radio" name="optionsHairs" id="optionsRadios12" value="option12">
+                                Tóc 12
+                                <?php //echo $lang['BG_5']; ?>
+                            </label><br>
+                            <label>
+                                <input type="radio" name="optionsHairs" id="optionsRadios13" value="option13">
+                                Tóc 13
+                                <?php //echo $lang['BG_5']; ?>
+                            </label><br>
+                            <label>
+                                <input type="radio" name="optionsHairs" id="optionsRadios14" value="option14">
+                                Tóc 14
+                                <?php //echo $lang['BG_5']; ?>
+                            </label><br>
+                            <label>
+                                <input type="radio" name="optionsHairs" id="optionsRadios15" value="option15">
+                                Tóc 15
+                                <?php //echo $lang['BG_5']; ?>
+                            </label><br>
+                            <br>
                         </div>
                     </div>
                     
@@ -171,17 +239,39 @@ include 'common.php';
                         <div class="col-sm-10">
                             <label>
                                 <input type="radio" name="optionsHairColors" id="optionsRadios1" value="option1" checked>
-                                Vàng
+                                Bạch kim
                                 <?php //echo $lang['BG_1']; ?>
                             </label><br>
                             <label>
-                                <input type="radio" name="optionsHairColors" id="optionsRadios5" value="option2">
+                                <input type="radio" name="optionsHairColors" id="optionsRadios2" value="option2">
                                 Đỏ
                                 <?php //echo $lang['BG_5']; ?>
                             </label><br>
                             <label>
-                                <input type="radio" name="optionsHairColors" id="optionsRadios2" value="option3">
+                                <input type="radio" name="optionsHairColors" id="optionsRadios3" value="option3">
+                                Hồng
+                                <?php //echo $lang['BG_5']; ?>
+                            </label><br>
+                            <label>
+                                <input type="radio" name="optionsHairColors" id="optionsRadios4" value="option4">
+                                Xanh
+                                <?php //echo $lang['BG_5']; ?>
+                            </label><br>
+                            <label>
+                                <input type="radio" name="optionsHairColors" id="optionsRadios5" value="option5">
                                 Đen
+                                <?php //echo $lang['BG_5']; ?>
+                            </label>
+                            <br>
+                            <label>
+                                <input type="radio" name="optionsHairColors" id="optionsRadios6" value="option6">
+                                Nâu
+                                <?php //echo $lang['BG_5']; ?>
+                            </label>
+                            <br>
+                            <label>
+                                <input type="radio" name="optionsHairColors" id="optionsRadios7" value="option7">
+                                Tím
                                 <?php //echo $lang['BG_5']; ?>
                             </label><br><br>
                         </div>
@@ -203,6 +293,57 @@ include 'common.php';
                             </label><br><br>
                         </div>
                     </div>
+                    
+                    <div class="form-group">
+                        <label for="name" class="col-sm-2 control-label"><?php echo $lang['LB_CHOOSE_GLASS']; ?></label>
+                        <div class="col-sm-10">
+                            <label>
+                                <input type="radio" name="optionsGlass" id="optionsRadios1" value="yes" >
+                                Có
+                                <?php //echo $lang['OWL_1']; ?>
+                            </label><br>
+                            <label>
+                                <input type="radio" name="optionsGlass" id="optionsRadios2" value="no" checked>
+                                Không
+                                <?php // echo $lang['OWL_2']; ?>
+                            </label><br><br>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="name" class="col-sm-2 control-label"><?php echo $lang['LB_CHOOSE_NAME']; ?></label>
+                        <div class="col-sm-10">
+                            <select id="optionsLetters" name="optionsLetters">
+                                <option>A</option>
+                                <option>B</option>
+                                <option>C</option>
+                                <option>D</option>
+                                <option>E</option>
+                                <option>F</option>
+                                <option>G</option>
+                                <option>H</option>
+                                <option>I</option>
+                                <option>J</option>
+                                <option>K</option>
+                                <option>L</option>
+                                <option>M</option>
+                                <option>N</option>
+                                <option>O</option>
+                                <option>P</option>
+                                <option>Q</option>
+                                <option>R</option>
+                                <option>S</option>
+                                <option>T</option>
+                                <option>U</option>
+                                <option>V</option>
+                                <option>W</option>
+                                <option>X</option>
+                                <option>Y</option>
+                                <option>Z</option>
+                            </select>
+                            <br><br>
+                        </div>
+                    </div>
 
                     <div class="form-group">
                         <div class="col-sm-10 col-sm-offset-2">
@@ -213,7 +354,7 @@ include 'common.php';
                 </form>
 
 
-                <img id="preview-image" src="images/default3.png" class="img-circle" width="30%" height="30%" download="myImage">
+                <img id="preview-image" src="images/default3.jpg" class="" width="30%" height="30%" download="myImage">
 
             </div>
         </div>
