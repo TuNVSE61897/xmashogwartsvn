@@ -69,6 +69,10 @@ include 'common.php';
                      },
                      });*/
                 });
+                
+                 $('#chooseJumper').change(function () {
+                      alert('"Má không nghĩ màu này hợp với con. Để má chọn cho", Molly nói.');           
+                });
 
             });
 
@@ -272,6 +276,23 @@ include 'common.php';
                             <label>
                                 <input type="radio" name="optionsHairColors" id="optionsRadios7" value="option7">
                                 Tím
+                                <?php //echo $lang['BG_5']; ?>
+                            </label><br><br>
+                        </div>
+                    </div>
+                    
+                     <div class="form-group" id="chooseJumper">
+                        <label for="name" class="col-sm-2 control-label"><?php echo $lang['LB_CHOOSE_JUMPER']; ?></label>
+                        <div class="col-sm-10">
+                            <label>
+                                <input type="radio" name="optionsJumpers" id="optionsRadios1" value="option1" checked>
+                                Áo tím
+        
+                                <?php //echo $lang['BG_1']; ?>
+                            </label><br>
+                            <label>
+                                <input type="radio" name="optionsJumpers" id="optionsRadios2" value="option2">
+                                 Áo hồng
                                 <?php //echo $lang['BG_5']; ?>
                             </label><br><br>
                         </div>

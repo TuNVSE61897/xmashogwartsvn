@@ -35,7 +35,7 @@ $lang['LB_CHOOSE_SKIN'] = 'Choose your skin:';
 
 $lang['LB_CHOOSE_FACE'] = 'Choose your face:';
 
-$lang['LB_CHOOSE_SHIRT'] = 'Choose your shirt:';
+$lang['LB_CHOOSE_JUMPER'] = 'Choose your jumper:';
 
 $lang['LB_CHOOSE_HAIR'] = 'Choose your hair:';
 

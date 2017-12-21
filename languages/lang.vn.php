@@ -35,7 +35,7 @@ $lang['LB_CHOOSE_SKIN'] = 'Bạn chọn màu da nào:';
 
 $lang['LB_CHOOSE_FACE'] = 'Bạn chọn mặt nào:';
 
-$lang['LB_CHOOSE_SHIRT'] = 'Bạn chọn áo nào:';
+$lang['LB_CHOOSE_JUMPER'] = 'Bạn chọn áo nào:';
 
 $lang['LB_CHOOSE_HAIR'] = 'Bạn chọn tóc nào:';
 
